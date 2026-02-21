@@ -275,10 +275,17 @@ function handleLogin() {
   const defaultPassword = "AITE2026";
   const errorMessage = document.getElementById("errorMessage");
 
-  if (passwordInput.value !== defaultPassword) {
-    errorMessage.textContent = "Incorrect Password. Please try again.";
-    return;
-  }
+if (passwordInput.value !== defaultPassword) {
+
+  errorMessage.textContent = "Incorrect Password. Please try again.";
+
+  alert("❌ Incorrect Password! Please try again.");
+
+  passwordInput.value = "";
+  passwordInput.focus();
+
+  return;
+}
 
   errorMessage.textContent = "";
 
@@ -377,3 +384,4 @@ const hamburger = document.getElementById('hamburger');
 hamburger.addEventListener('click', () => {
   sidebar.classList.toggle('active');
 });
+
