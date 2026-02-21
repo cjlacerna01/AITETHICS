@@ -94,10 +94,19 @@
   <p id="quoteText">Click the button for inspiration ✨</p>
   <button onclick="newQuote()">New Quote</button>
 </div>
+  
   <div class="home-grid">
-    <div class="home-card" data-aos="fade-up">
-      <img src="anime.png" alt="AITE Academy Logo">
-      <h3>About AITE</h3>
+    <div class="home-card" data-aos="fade-up"
+     onclick="document.querySelector('[data-section=mission]').click()"
+     style="cursor:pointer;">
+
+  <img src="anime.png" alt="AITE Academy Logo">
+      
+<h3 onclick="document.querySelector('[data-section=mission]').click()"
+    style="cursor:pointer; color:#5a2a83;">
+  About AITE
+</h3>
+      
       <p>The Asian Institute of Technology and Education is committed to nurturing young tech leaders, athletes, and innovators.</p>
     </div>
     <div class="home-card" data-aos="fade-up" data-aos-delay="100">
@@ -534,6 +543,7 @@ values to succeed in their chosen careers.
 </body>
 
 </html>
+
 
 
 
