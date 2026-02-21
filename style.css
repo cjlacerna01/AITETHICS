@@ -9,6 +9,30 @@
   padding: 0;
   box-sizing: border-box;
 }
+.quote-box button {
+    background-color: #2c3e50; /* Dark elegant blue/grey */
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.quote-box button:hover {
+    background-color: #34495e;
+    transform: translateY(-2px); /* Slight lift effect */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.quote-box button:active {
+    transform: translateY(0); /* Returns to normal when clicked */
+}
 
 body {
   font-family: Georgia, serif;
@@ -1381,3 +1405,4 @@ body.no-scroll {
   p, li { font-size: 1rem; }
   .conduct-card { padding: 1rem; }
 }
+
