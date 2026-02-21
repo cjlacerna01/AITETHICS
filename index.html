@@ -1,0 +1,421 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <!-- Google Font: Abel -->
+<link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+<!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>AITE Student Handbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- MODERN TECH LOADING SCREEN -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="loading-content">
+    <img src="assetslogo-aite.png" class="loading-logo">
+    <p>Loading Handbook...</p>
+    <div class="spinner"></div>
+  </div>
+</div>
+
+
+<!-- WELCOME SCREEN -->
+<div class="welcome-overlay" id="welcomeOverlay">
+  <div class="welcome-box">
+    <img src="assetslogo-aite.png" class="welcome-logo">
+    <h1>Welcome to the AITETHICS – AITEans Handbook</h1>
+    <p>Your official guide to rules, conduct, and student responsibilities.</p>
+
+    <!-- PASSWORD FIELD ADDED -->
+    <input type="password" id="passwordInput" placeholder="Enter Password">
+
+<p class="password-demo">
+  Demo Password: <strong>AITE2026</strong>
+</p>
+
+<button id="enterHandbook">Enter Handbook</button>
+
+<p id="errorMessage" style="color:red; margin-top:10px;"></p>
+  </div>
+</div>
+<!-- HEADER -->
+<header>
+  <div class="hamburger" id="hamburger">
+  <i class="fas fa-bars"></i>
+</div>
+  <div class="header-left">
+    <img src="assetslogo-aite.png" class="header-logo">
+    <h1>AITE Student Handbook 📘</h1>
+  </div>
+  <div class="header-clock" id="clock"></div>
+</header>
+
+<div class="layout">
+
+<!-- SIDEBAR -->
+<aside>
+  <nav>
+    <a data-section="home">Home 🏠</a>
+    <a data-section="overview">Overview 🏛️</a>
+    <a data-section="policies">Policies 📜</a>
+    <a data-section="guidelines">Guidelines 🛡️</a>
+    <a data-section="resources">Resources 🏫</a>
+    <a data-section="conduct">Student Conduct 👔</a>
+    <a data-section="mission">Mission & Vision 🎯</a>
+    <a data-section="about">About Us 👥</a>
+  </nav>
+</aside>
+
+<!-- MAIN CONTENT -->
+<main>
+  <!-- HOME SECTION -->
+<div class="content active" id="home">
+  <h2>Welcome to AITE Academy 🏫</h2>
+  <p>Discover our mission, vision, and facilities. Your journey to excellence begins here!</p>
+  <div class="hero">
+  <div class="hero-content">
+    <h1>Empowering Future Innovators</h1>
+    <p>
+      The AITE Student Handbook reflects our commitment to excellence,
+      discipline, and technological leadership.
+    </p>
+    <a href="#" class="hero-btn" onclick="document.querySelector('[data-section=overview]').click()">
+      Explore Handbook
+    </a>
+    
+  </div>
+</div>
+<div class="quote-box">
+  <p id="quoteText">Click the button for inspiration ✨</p>
+  <button onclick="newQuote()">New Quote</button>
+</div>
+  <div class="home-grid">
+    <div class="home-card" data-aos="fade-up">
+      <img src="anime.png" alt="AITE Academy Logo">
+      <h3>About AITE</h3>
+      <p>The AITE Academy is committed to nurturing young tech leaders, athletes, and innovators.</p>
+    </div>
+    <div class="home-card" data-aos="fade-up" data-aos-delay="100">
+      <img src="basketball.png" alt="Basketball">
+      <h3>Sports & Activities</h3>
+      <p>We promote holistic development through competitive sports, team-building, and wellness programs.</p>
+    </div>
+    <div class="home-card" data-aos="fade-up" data-aos-delay="200">
+      <img src="volvo.png" alt="Campus Building">
+      <h3>Facilities</h3>
+      <p>State-of-the-art classrooms, labs, and recreational areas to foster creativity and learning.</p>
+    </div>
+    <div class="home-card" data-aos="fade-up" data-aos-delay="300">
+      <img src="comlab.png" alt="Computer Lab">
+      <h3>Computer Labs</h3>
+      <p>Advanced computer laboratories to support research, coding, and technical skill-building.</p>
+    </div>
+  </div>
+  <div class="social">
+    <a href="https://www.facebook.com/AITE.OFFICIAL" target="_blank">
+      <img src="fb.png" alt="Facebook" class="social-icon">
+    </a>
+  </div>
+</div>
+
+
+<div class="placeholder" id="placeholder">
+  <h2>Select a section</h2>
+  <p>Please choose a section from the menu to begin.</p>
+</div>
+
+<!-- OVERVIEW -->
+<div class="content" id="overview">
+<h2>Overview 🏛️</h2>
+<p>The AITE Student Handbook serves as the definitive guide for all students, providing a clear roadmap for academic success and personal conduct. Its primary purpose is to foster an environment of mutual respect, safety, and excellence.</p>
+<p>By understanding the contents of this handbook, every AITEan is empowered to navigate campus life with confidence and responsibility. Below is a detailed overview of the core regulatory pillars contained within this document:</p>
+
+<h3>General Rules & Regulations 📏</h3>
+<p>This section establishes the foundation of daily life at AITE, including campus entry and exit procedures, uniform and grooming standards, and attendance expectations.</p>
+
+<h3>Cellphone & Electronic Device Policies 📱</h3>
+<p>This section promotes responsible use of technology, outlining classroom protocols and digital ethics.</p>
+
+<h3>Offenses, Sanctions & Disciplinary System ⚖️</h3>
+<p>This section explains minor and major offenses, corresponding sanctions, and the role of the Disciplinary Committee in ensuring due process.</p>
+
+<p><strong>Commitment to Excellence:</strong> Every AITEan is expected to be familiar with these sections to maintain focus on education and community contribution.</p>
+</div>
+
+<!-- POLICIES -->
+<div class="content" id="policies">
+<h2>Policies 📜</h2>
+
+<h3>🏛️ Core Values & Institutional Mission</h3>
+<ul>
+<li><strong>Integrity:</strong> Honesty in all academic and personal dealings.</li>
+<li><strong>Innovation:</strong> A drive to use technology and creativity for the better.</li>
+<li><strong>Service:</strong> Commitment to contributing to the community and the nation.</li>
+</ul>
+
+<h3>🎒 Student Rights & Welfare</h3>
+<ul>
+<li><strong>Quality Education:</strong> Access to competent faculty and updated learning materials.</li>
+<li><strong>Freedom of Expression:</strong> The right to voice concerns through proper channels like the Student Council.</li>
+<li><strong>Privacy:</strong> Protection of personal and academic records under the Data Privacy Act.</li>
+</ul>
+
+<h3>🏫 Facilities & Services</h3>
+<ul>
+<li><strong>Library:</strong> A quiet zone for research and study. Observe the Silence policy.</li>
+<li><strong>Guidance Office:</strong> Career counseling, mental health support, and personal growth.</li>
+<li><strong>IT Labs:</strong> Strictly for academic use. No unauthorized software installations.</li>
+</ul>
+
+<h3>👔 Proper Attire & Grooming</h3>
+<ul>
+<li><strong>Proper Uniform Decorum:</strong> Official uniform must be worn correctly and clean.</li>
+<li><strong>Identification Card (ID):</strong> Must be worn at all times and visible.</li>
+<li><strong>Decent Grooming:</strong> Professional appearance is required.</li>
+<li><strong>PE Attire:</strong> Official PE uniform only during PE or athletic activities.</li>
+</ul>
+
+<h3>📝 Academic Policies & Standards</h3>
+<p><strong>Attendance & Punctuality:</strong> Habitual absenteeism may result in academic delinquency.</p>
+<p><strong>Academic Integrity:</strong> Cheating and plagiarism are strictly prohibited.</p>
+</div>
+
+<!-- GUIDELINES -->
+<div class="content" id="guidelines">
+<h2>Guidelines 🛡️</h2>
+<p>The AITE Student Handbook is a framework for professional growth, not merely a set of restrictions.</p>
+<h3>Foundation of Campus Life 🏛️</h3>
+<p>Proper uniform, ID display, punctuality, and attendance reflect institutional pride.</p>
+<h3>Technological Discipline & Digital Ethics 📱</h3>
+<p>Responsible device usage protects learning focus, privacy, and digital safety.</p>
+<h3>Accountability & Due Process ⚖️</h3>
+<p>Discipline is corrective, ensuring fairness, reform, and campus safety.</p>
+<h3>Moving Forward as One AITE 🤝</h3>
+<p>By following these guidelines, students build their future careers and uphold AITE’s excellence.</p>
+</div>
+
+<!-- RESOURCES -->
+<div class="content" id="resources">
+<h2>Resources 🏫</h2>
+<h3>Guidance & Counseling Office 🧠</h3>
+<p>Counseling services and career pathing seminars support student well-being.</p>
+<h3>Library & Learning Resource Center 📚</h3>
+<p>Access to textbooks, journals, digital materials, and quiet study zones.</p>
+<h3>Advanced Computer Laboratories 💻</h3>
+<p>High-performance labs for academic and research purposes only.</p>
+<h3>Office of Student Affairs (OSA) 🎉</h3>
+<p>Student organizations, leadership training, and campus events.</p>
+<h3>Health & Medical Services 🏥</h3>
+<p>Basic medical assistance, health monitoring, and emergency response.</p>
+</div>
+
+<!-- STUDENT CONDUCT -->
+<div class="content" id="conduct">
+<h2>Student Conduct 👔</h2>
+
+<div class="conduct-card">
+  <h3>📏 General Rules & Regulations <button class="more" data-info="general">More</button></h3>
+</div>
+
+<div class="conduct-card">
+  <h3>🏫 Other Rules & Regulations <button class="more" data-info="other">More</button></h3>
+</div>
+
+<div class="conduct-card">
+  <h3>🛡️ Student Protection Program (Bullying) <button class="more" data-info="bullying">More</button></h3>
+</div>
+
+<div class="conduct-card">
+  <h3>📱 Cellphone Policies <button class="more" data-info="cellphone">More</button></h3>
+</div>
+
+<div class="conduct-card">
+  <h3>⚖️ Offenses & Sanctions <button class="more" data-info="offenses">More</button></h3>
+</div>
+
+<div class="conduct-card">
+  <h3>📝 Types of Disciplinary Action <button class="more" data-info="actions">More</button></h3>
+</div>
+</div>
+<!-- MISSION & VISION -->
+<div class="content" id="mission">
+  <h2>Mission & Vision 🎯</h2>
+
+  <div class="mv-intro">
+    <p>
+      The mission, vision, and core values of AITE serve as the foundation
+      of institutional identity, guiding decision-making, academic excellence,
+      and student development in a rapidly evolving technological world.
+    </p>
+  </div>
+
+  <!-- MISSION -->
+  <div class="mv-card mission-card">
+    <h3>Our Mission</h3>
+    <p>
+      To promote and achieve excellence through technology and continuous
+      improvement. AITE is dedicated to developing the full potential of its
+      students and preparing them to become achievers and contributors in their
+      chosen fields.
+    </p>
+    <p>
+      Through innovative learning environments, ethical discipline, and
+      student-centered programs, AITE nurtures individuals who are competent,
+      responsible, and adaptable to global challenges.
+    </p>
+  </div>
+
+  <!-- VISION -->
+  <div class="mv-card vision-card">
+    <h3>Our Vision</h3>
+    <p>
+      To become one of the leading institutions in producing globally
+      competitive professionals and skilled workers who will help transform
+      communities and contribute to national development.
+    </p>
+    <p>
+      AITE envisions a future where education empowers learners to lead,
+      innovate, and make meaningful contributions to society.
+    </p>
+  </div>
+
+  <!-- CORE VALUES -->
+  <div class="mv-card values-card">
+    <h3>Core Values – A.I.T.E.</h3>
+
+    <div class="values-grid">
+      <div class="value-box">
+        <span>A</span>
+        <h4>Achieve GREAT Things</h4>
+        <p>We pursue excellence with determination, discipline, and purpose.</p>
+      </div>
+
+      <div class="value-box">
+        <span>I</span>
+        <h4>Initiate Changes</h4>
+        <p>We encourage innovation, adaptability, and proactive leadership.</p>
+      </div>
+
+      <div class="value-box">
+        <span>T</span>
+        <h4>Transform from Better to Best</h4>
+        <p>We continuously improve through learning, reflection, and growth.</p>
+      </div>
+
+      <div class="value-box">
+        <span>E</span>
+        <h4>Excel and Remain Humble</h4>
+        <p>We achieve with integrity, humility, and respect for others.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ABOUT US -->
+<!-- ABOUT US -->
+<div class="content" id="about">
+  <h2>About Us 👥</h2>
+<div class="about-divider"></div>
+<p class="about-intro">
+  The AITE Student Handbook System was developed through collaboration,
+  discipline, and shared responsibility. Each member contributed their
+  skills to ensure clarity, accessibility, and academic integrity.
+</p>
+
+
+  <div class="about-grid">
+
+    <div class="about-card">
+      <h4>Christian Jaylo M. Lacerna</h4>
+      <ul class="about-info">
+        <li><strong>Lives in:</strong> Cassandra, Tiaong Quezon</li>
+        <li><strong>Age:</strong> 17</li>
+        <li><strong>Skills:</strong> Project Management, System Design</li>
+      </ul>
+      <blockquote>“Discipline and innovation build lasting systems.”</blockquote>
+    </div>
+
+    <div class="about-card">
+      <h4>Carl James M. Gonzales</h4>
+      <ul class="about-info">
+        <li><strong>Lives in:</strong> San Francisco, Tiaong Quezon</li>
+        <li><strong>Age:</strong> 17</li>
+        <li><strong>Skills:</strong> Multitasker</li>
+      </ul>
+      <blockquote>“Design should guide, not distract.”</blockquote>
+    </div>
+
+    <div class="about-card">
+      <h4>Jorenz M. Perez</h4>
+      <ul class="about-info">
+        <li><strong>Lives in:</strong> San Francisco, Tiaong Quezon</li>
+        <li><strong>Age:</strong> 17</li>
+        <li><strong>Skills:</strong>Responsible</li>
+      </ul>
+      <blockquote>“Clean code reflects clear thinking.”</blockquote>
+    </div>
+
+    <div class="about-card">
+      <h4>Ashley S. Garces</h4>
+      <ul class="about-info">
+        <li><strong>Lives in:</strong> Lalig Tiaong Quezon</li>
+        <li><strong>Age:</strong> 17</li>
+        <li><strong>Skills:</strong> Designer</li>
+      </ul>
+      <blockquote>“Functionality gives des  ign its purpose.”</blockquote>
+    </div>
+
+    <div class="about-card">
+      <h4>Christian Paul A. Reyes</h4>
+      <ul class="about-info">
+        <li><strong>Lives in:</strong> Lalig, Tiaong Quezon</li>
+        <li><strong>Age:</strong> 17</li>
+        <li><strong>Skills:</strong> Technical</li>
+      </ul>
+      <blockquote>“Clarity is the foundation of understanding.”</blockquote>
+    </div>
+
+    <div class="about-card">
+      <h4>Jeoffrey Martin R. Punzalan</h4>
+      <ul class="about-info">
+        <li><strong>Lives in:</strong> Lalig, Tiaong Quezon</li>
+        <li><strong>Age:</strong> 17</li>
+        <li><strong>Skills:</strong> Quality Assurance</li>
+      </ul>
+      <blockquote>“Quality is achieved through attention to detail.”</blockquote>
+    </div>
+
+    <div class="about-card">
+      <h4>Joshua Edralin</h4>
+      <ul class="about-info">
+        <li><strong>Lives in:</strong> Poblacion I, Tiaong Quezon</li>
+        <li><strong>Age:</strong>21</li>
+        <li><strong>Skills:</strong> Technical</li>
+      </ul>
+      <blockquote>“A stable system is built before it is seen.”</blockquote>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- MODAL -->
+<div class="modal" id="modal">
+  <div class="modal-box">
+    <button id="closeModal">Close ✖️</button>
+    <div id="modalText"></div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer id="siteFooter">
+  <p>AITETHICS – AITEans Handbook (2026) | AITE (2023)</p>
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+</html>
